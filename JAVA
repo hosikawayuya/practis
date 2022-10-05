@@ -1,0 +1,204 @@
+public class Practice {
+    // 例題
+    static double getTriangleArea(double height, double base) {
+        return height * base / 2.0;
+    }
+
+    // 問題１
+    static void printHello() {
+        System.out.println("Hello");
+    }
+
+    // 問題２
+    static void printPI() {
+        System.out.println(Math.PI);
+    }
+
+    // 問題３
+    static void printRandamMessage() {
+        int n = (int) (3 * Math.random());
+        String[] greeting = { "こんばんは", "こんにちは", "おはよう" };
+        System.out.println(greeting[n]);
+    }
+
+    // 問題４
+    static void printMessage(String message) {
+        System.out.println("Hello");
+    }
+
+    // 問題５
+    static void printCircleArea(double radius) {
+        System.out.println(Math.pow(radius, radius) * Math.PI);
+    }
+
+    // 問題６
+    static void printRandomMessage(String name) {
+
+        int n = (int) (3 * Math.random());
+        String[] greetingname = { "こんばんは" + name + "さん",
+                "こんにちは" + name + "さん",
+                "おはよう" + name + "さん"}; 
+        System.out.println(greetingname[n]);
+    }
+
+    // 問題７
+    static void printMessage(String message, int count) {
+        for (int i = 0; i < count; i++)
+            System.out.print(message + " ");
+    }
+
+    // 問題８
+    static void printRectangleArea(double height, double width) {
+        System.out.println(height * width);
+    }
+
+    // 問題９
+    static void printMaxValue(double a, double b, double c) {
+        if (a > b && a > c) {
+            System.out.println(a);
+        } else if (b < c) {
+            System.out.println(c);
+        } else {
+            System.out.print(b);
+        }
+
+    }
+
+    // 問題１０
+    static String getMessage() {
+        String message = "よろしくおねがいします";
+        return message;
+    };
+
+    // 問題１１
+    static String getWeatherForecast() {
+
+        String[][] getWeatherForecast = {
+                { "今日", "明日", "明後日" },
+                { "晴れ", "曇り", "雨","雪"}  
+        };
+
+        int i = (int) (getWeatherForecast[0].length * Math.random());
+        int x = (int) (getWeatherForecast[1].length * Math.random());
+        return getWeatherForecast[0][i] + "の天気は" + getWeatherForecast[1][x] + "でしょう。";
+    }
+
+    // 問題１２
+    static double getSquareRootOf2() {
+        double d = Math.sqrt(2.0);
+        return d;
+    }
+
+    // 問題１３
+    static String getRandomMessage(String name) {
+        int i = (int) (3 * Math.random());
+        String[] greetingname = {
+                "こんばんは" + name + "さん",
+                "こんにちは" + name + "さん",
+                "おはよう" + name + "さん"}; 
+        return greetingname[i];
+    }
+
+    // 問題１４
+    static double getAbsoluteValue(double value) {
+        return Math.abs(value);
+    }
+
+    // 問題１５
+    static boolean isEvenNumber(int value) {
+
+        if (value % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // 問題１６
+    static double getMinValue(double a, double b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    // 問題１７
+    static String isSameAbsoluteValue(int i, int j) {
+        if (Math.abs(i) == Math.abs(j)) {
+            return "true";
+        } else {
+            return "false";
+        }
+    }
+
+    // 問題１８
+    static String getMessage(String name, boolean iskid) {
+        if (true == iskid) {
+            return "こんにちは"+name+"ちゃん";
+        } else {
+            return "こんにちは"+name+"さん";
+        }
+    }
+
+    public static void main(String[] args) {
+        // 例題
+        double getTriangleArea = getTriangleArea(8.2, 4.0);
+        System.out.println("三角形の面積は" + getTriangleArea);
+
+        // 問題１
+        printHello();
+
+        // 問題２
+        printPI();
+
+        // 問題３
+        printRandamMessage();
+
+        // 問題４
+        printMessage("Hello");
+
+        // 問題５
+        printCircleArea(2.0);
+
+        // 問題６
+        printRandomMessage("java");
+
+        // 問題７
+        printMessage("Hello", 5);
+
+        // 問題８
+        printRectangleArea(5.0, 5.0);
+
+        // 問題９
+        printMaxValue(6.5, 8.6, 7.3);
+
+        // 問題１０
+        System.out.println(getMessage());
+
+        // 問題１１
+        System.out.println(getWeatherForecast());
+
+        // 問題１２
+        System.out.println(getSquareRootOf2());
+
+        // 問題１３
+        System.out.println(getRandomMessage("java"));
+
+        // 問題１４
+        System.out.println(getAbsoluteValue(-3.6));
+
+        // 問題１５
+        System.out.println(isEvenNumber(7));
+
+        // 問題１６
+        System.out.println(getMinValue(4.7, 4.0));
+
+        // 問題１７
+        System.out.println(isSameAbsoluteValue(25, 24));
+
+        // 問題１８
+        System.out.println(getMessage("JAVA", true));
+
+    }
+}
